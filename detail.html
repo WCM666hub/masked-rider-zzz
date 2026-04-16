@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色详情 - 假面骑士ZZZ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background: #000;
+            color: #fff;
+        }
+        header {
+            background: #c00;
+            padding: 1.2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: #fff;
+        }
+        nav {
+            background: #222;
+            padding: 0.9rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .detail-img {
+            width: 100%;
+            height: 320px;
+            background: #000;
+            margin: 1.2rem 0;
+            border-radius: 8px;
+            background-image: url('zzz1.jpg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* 左文右图布局 */
+        .module-flex {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .text-area {
+            flex: 1;
+        }
+        /* 放大图片尺寸 */
+        .in-img {
+            width: 280px;
+            height: 220px;
+            background: #111;
+            border-radius: 8px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            flex-shrink: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 1.5rem auto;
+            padding: 0 1.5rem;
+        }
+        .section {
+            background: #111;
+            padding: 1.4rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #333;
+        }
+        .section h2 {
+            color: #ff2222;
+            margin-bottom: 0.9rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        /* 标签紧贴文字，无空隙 */
+        .info {
+            line-height: 2;
+        }
+        .info dt {
+            display: inline;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-right: 4px;
+        }
+        .info dd {
+            display: inline;
+            color: #ccc;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .data-table th,.data-table td {
+            border: 1px solid #333;
+            padding: 0.7rem;
+            text-align: center;
+        }
+        .data-table th {
+            background: #222;
+            color: #ff2222;
+        }
+        a.btn {
+            display: inline-block;
+            margin-top: 1.2rem;
+            padding: 0.8rem 2rem;
+            background: #c00;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        a.btn:hover {
+            background: #f00;
+        }
+        footer {
+            padding: 1.5rem;
+            background: #111;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>假面骑士ZZZ（Zeztz）角色详情</h1>
+    </header>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="detail.html">角色详情</a>
+    </nav>
+
+    <div class="container">
+        <div class="detail-img"></div>
+
+        <!-- 基本信息 -->
+        <section class="section">
+            <h2>基本信息</h2>
+            <div class="module-flex">
+                <div class="text-area">
+                    <dl class="info">
+                        <dt>正式名称：</dt><dd>仮面ライダーゼッツ / Kamen Rider Zeztz</dd><br>
+                        <dt>系列地位：</dt><dd>令和第7作、系列第40部</dd><br>
+                        <dt>核心主题：</dt><dd>梦境 × 特工</dd><br>
+                        <dt>播出时间：</dt><dd>2025年9月7日 全50话</dd>
+                    </dl>
+                </div>
+                <div class="in-img" style="background-image: url('zzz2.jpg');"></div>
+            </div>
+        </section>
+
+        <!-- 变身者与组织（新增右侧图片） -->
+        <section class="section">
+            <h2>变身者与组织</h2>
+            <div class="module-flex">
+                <div class="text-area">
+                    <dl class="info">
+                        <dt>变身者：</dt><dd>万津莫（Baku Yorozu）</dd><br>
+                        <dt>所属组织：</dt><dd>CODE（暗码）代号No.7</dd><br>
+                        <dt>特殊能力：</dt><dd>明晰梦操控、梦境潜入</dd>
+                    </dl>
+                </div>
+                <div class="in-img" style="background-image: url('zzz3.jpg');"></div>
+            </div>
+        </section>
+
+        <!-- 变身系统 -->
+        <section class="section">
+            <h2>变身系统</h2>
+            <div class="module-flex">
+                <div class="text-area">
+                    <dl class="info">
+                        <dt>变身驱动器：</dt><dd>Zeztz驱动器（胸侧斜挎式）</dd><br>
+                        <dt>变身道具：</dt><dd>梦胶囊（Capsem）</dd><br>
+                        <dt>变身音效：</dt><dd>Good morning rider！Ze Ze Zeztz！Impact！</dd>
+                    </dl>
+                </div>
+                <div class="in-img" style="background-image: url('zzz4.jpg');"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>基础形态 完整数据</h2>
+            <table class="data-table">
+                <tr>
+                    <th>形态名称</th>
+                    <th>身高</th>
+                    <th>体重</th>
+                    <th>拳力</th>
+                    <th>踢力</th>
+                    <th>跳跃力</th>
+                    <th>走力</th>
+                    <th>防御力</th>
+                    <th>速度</th>
+                </tr>
+                <tr>
+                    <td>物理冲击形态</td>
+                    <td>194.9cm</td>
+                    <td>80.5kg</td>
+                    <td>8.1吨</td>
+                    <td>16.2吨</td>
+                    <td>9.8m</td>
+                    <td>100m/7.6s</td>
+                    <td>A级</td>
+                    <td>超音速</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 必杀技 -->
+        <section class="section">
+            <h2>必杀技</h2>
+            <div class="module-flex">
+                <div class="text-area">
+                    <dl class="info">
+                        <dt>Impact Vanish：</dt><dd>基础必杀踢，梦境冲击破碎</dd><br>
+                        <dt>Impact Over Vanish：</dt><dd>超强化必杀，威力翻倍</dd><br>
+                        <dt>Dream Slash：</dt><dd>梦境能量斩击</dd>
+                    </dl>
+                </div>
+                <div class="in-img" style="background-image: url('card2.jpg');"></div>
+            </div>
+        </section>
+
+        <a href="index.html" class="btn">返回首页</a>
+    </div>
+
+    <footer>© 2026 假面骑士ZZZ | 课程实验作品</footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>假面骑士ZZZ（Zeztz）</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei",sans-serif}
+        body{background:#000;color:#fff}
+        header{background:#c00;padding:1.5rem;text-align:center}
+        header h1{font-size:2rem;color:#fff}
+        nav{background:#222;padding:1rem;display:flex;justify-content:center;gap:2rem}
+        nav a{color:#fff;text-decoration:none;font-size:1.1rem}
+        nav a:hover{color:#ffcc00}
+
+        /* 封面大图：填满区域 */
+        .hero-img{
+            width:100%;
+            height:450px;
+            background:#000;
+            background-image:url('zzzlogo.jpg');
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+        }
+
+        .hero{padding:2rem;text-align:center}
+        .hero h2{font-size:2.8rem;margin-bottom:1rem;color:#ff2222}
+        .hero p{font-size:1.2rem;margin-bottom:2rem;max-width:800px;margin:auto}
+        .btn{display:inline-block;padding:.8rem 2rem;background:#c00;color:#fff;border-radius:4px;text-decoration:none}
+        .btn:hover{background:#f00}
+
+        /* 卡片图片统一样式 */
+        .card-img{
+            width:100%;
+            height:180px;
+            background-size:cover;
+            background-position:center;
+            border-radius:6px;
+        }
+
+        .cards{padding:3rem 2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;max-width:1200px;margin:auto}
+        .card{background:#111;padding:1.5rem;border-radius:8px;border:1px #333 solid}
+        .card h3{color:#ff2222;margin-bottom:1rem;font-size:1.5rem}
+        .card p{line-height:1.6;color:#ccc}
+
+        footer{padding:2rem;background:#111;text-align:center;color:#666;margin-top:2rem}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>假面骑士ZZZ（Zeztz）官方专题站</h1>
+    </header>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="detail.html">角色详情</a>
+    </nav>
+
+    <div class="hero-img"></div>
+
+    <section class="hero">
+        <h2>假面骑士Zeztz —— 梦境特工</h2>
+        <p>令和第7作《假面骑士Zeztz》（俗称ZZZ）以“梦境×特工”为核心，讲述变身者万津莫作为组织CODE No.7，在“明晰梦”中对抗梦魇怪人，守护人类精神领域“心灵之门”的故事。</p>
+        <a href="detail.html" class="btn">查看完整详情</a>
+    </section>
+
+    <section class="cards">
+        <!-- 卡片1：核心设定 图片1 -->
+        <div class="card">
+            <div class="card-img" style="background-image:url('card1.jpg')"></div>
+            <h3>核心设定</h3>
+            <p>变身者：万津莫<br>变身器：Zeztz驱动器<br>核心道具：梦胶囊<br>所属组织：CODE（暗码）</p>
+        </div>
+
+        <!-- 卡片2：必杀技能 图片2 -->
+        <div class="card">
+            <div class="card-img" style="background-image:url('card2.jpg')"></div>
+            <h3>必杀技能</h3>
+            <p>Impact Vanish<br>Impact Over Vanish<br>变身音效：Ze Ze Zeztz！</p>
+        </div>
+
+        <!-- 卡片3：战斗特点 图片3 -->
+        <div class="card">
+            <div class="card-img" style="background-image:url('card3.jpg')"></div>
+            <h3>战斗特点</h3>
+            <p>梦境世界战斗<br>高速行动·梦境穿梭<br>特工式潜入+肉搏</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 假面骑士ZZZ | AI网站作品
+    </footer>
+</body>
+</html>
